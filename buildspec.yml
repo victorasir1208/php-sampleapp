@@ -3,6 +3,7 @@ phases:
   pre_build:
     commands:
       - composer install
+      - composer self-update --1
   build:
     commands:
       - phpunit tests

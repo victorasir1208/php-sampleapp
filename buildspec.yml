@@ -12,6 +12,8 @@ phases:
      - echo Build started on `date`
      - echo Installing composer deps
      - composer install
+     - composer install --ignore-platform-reqs
+     - composer update --ignore-platform-reqs
      - cp extra/.env ./
      - php artisan cache:clear
 
